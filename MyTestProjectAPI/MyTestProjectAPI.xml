@@ -1,0 +1,216 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MyTestProjectAPI</name>
+    </assembly>
+    <members>
+        <member name="T:MyTestProjectAPI.Controllers.UserManagement.UserInfoAPIController">
+            <summary>
+            Controller for User Info.
+            </summary>
+        </member>
+        <member name="F:MyTestProjectAPI.Controllers.UserManagement.UserInfoAPIController.objAppConfigurationSettings">
+            <summary>
+            Define Configuration settings objects
+            </summary>
+        </member>
+        <member name="F:MyTestProjectAPI.Controllers.UserManagement.UserInfoAPIController.baseService">
+            <summary>
+            private read only service injection.
+            </summary>
+        </member>
+        <member name="M:MyTestProjectAPI.Controllers.UserManagement.UserInfoAPIController.#ctor(Microsoft.Extensions.Options.IOptions{MyTestProjectDomainLayer.BaseClasses.AppConfigurationSettings},MyTestProjectDomainLayer.BaseClasses.IBaseService{MyTestProjectDomainLayer.CommonEntities.UserManagement.UserInfo})">
+            <summary>
+            Constructure for User Info.
+            </summary>
+            <param name="_appSettingsSection"></param>
+            <param name="_baseService"></param>
+        </member>
+        <member name="M:MyTestProjectAPI.Controllers.UserManagement.UserInfoAPIController.AddEntity(MyTestProjectDomainLayer.RequestClasses.AddRequest.UserManagement.UserInfoAddRequest)">
+            <summary>
+            Add method for User Info.
+            </summary>
+            <param name="entityObject" > Class object for Add method.</param>
+            <returns>Uniform Response with Success or Error.</returns>
+        </member>
+        <member name="M:MyTestProjectAPI.Controllers.UserManagement.UserInfoAPIController.UpdateEntity(MyTestProjectDomainLayer.RequestClasses.EditRequest.UserManagement.UserInfoEditRequest)">
+            <summary>
+            Update method for User Info.
+            </summary>
+            <param name="entityObject">Class object for Update method.</param>
+            <returns>Uniform Response with Success or Error.</returns>
+        </member>
+        <member name="M:MyTestProjectAPI.Controllers.UserManagement.UserInfoAPIController.DeleteEntity(System.Int64)">
+            <summary>
+            Delete method for User Info
+            </summary>
+            <param name="userId"></param>
+            <returns>Uniform Response with Success or Error.</returns>
+        </member>
+        <member name="M:MyTestProjectAPI.Controllers.UserManagement.UserInfoAPIController.GetEntityList(MyTestProjectDomainLayer.RequestClasses.EditRequest.UserManagement.UserInfoEditRequest)">
+            <summary>
+            Get list of User Info based on filter parameter.
+            </summary>
+            <param name="entityObject"> Object with filter information.</param>
+            <returns>Uniform Response with Success or Error.</returns>
+        </member>
+        <member name="T:MyTestProjectAPI.Controllers.WeatherForecastController">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MyTestProjectAPI.Controllers.WeatherForecastController.#ctor(Microsoft.Extensions.Logging.ILogger{MyTestProjectAPI.Controllers.WeatherForecastController})">
+            <summary>
+            
+            </summary>
+            <param name="logger"></param>
+        </member>
+        <member name="M:MyTestProjectAPI.Controllers.WeatherForecastController.Get">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:MyTestProjectAPI.Program">
+            <summary>
+            Program Class
+            </summary>
+        </member>
+        <member name="M:MyTestProjectAPI.Program.Main(System.String[])">
+            <summary>
+            Main Method
+            </summary>
+        </member>
+        <member name="M:MyTestProjectAPI.Program.CreateHostBuilder(System.String[])">
+            <summary>
+            CreateHostBuilder 
+            </summary>
+        </member>
+        <member name="T:MyTestProjectAPI.ServiceInstallers.DomainServicesRegistration">
+            <summary>
+            Domain service registration
+            </summary>
+        </member>
+        <member name="M:MyTestProjectAPI.ServiceInstallers.DomainServicesRegistration.InstallerService(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Installer Service 
+            </summary>
+            <param name="configuration">configuration parameter</param>
+            <param name="services">service parameter</param>
+        </member>
+        <member name="T:MyTestProjectAPI.ServiceInstallers.InstallerExtentions">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MyTestProjectAPI.ServiceInstallers.InstallerExtentions.InstallServicesInAssemblies(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:MyTestProjectAPI.ServiceInstaller.Utilities">
+            <summary>
+            Static class for static methods
+            </summary>
+        </member>
+        <member name="M:MyTestProjectAPI.ServiceInstaller.Utilities.SendSMS(System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="msg"></param>
+            <param name="number"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MyTestProjectAPI.ServiceInstaller.Utilities.CreateRandomPassword">
+            <summary>
+            Method for creating random password.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MyTestProjectAPI.ServiceInstaller.Utilities.CreateRandomTransactionId">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:MyTestProjectAPI.Startup">
+            <summary>
+            Startup class
+            </summary>
+        </member>
+        <member name="P:MyTestProjectAPI.Startup.Configuration">
+            <summary>
+            Property for Configuration.
+            </summary>
+        </member>
+        <member name="F:MyTestProjectAPI.Startup.AllowedSpecificOrigins">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MyTestProjectAPI.Startup.ProjectTitle">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MyTestProjectAPI.Startup.ProjectXMLFilePath">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MyTestProjectAPI.Startup.EnableDebuggingAndDocumentation">
+            <summary>
+            To Decide the Run-environment
+            </summary>
+        </member>
+        <member name="P:MyTestProjectAPI.Startup.CORSUrls">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MyTestProjectAPI.Startup.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Startup Initiation
+            </summary>
+            <param name="configuration">configuration variable</param>
+        </member>
+        <member name="M:MyTestProjectAPI.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Configure Services
+            </summary>
+            <param name="services">service variable</param>
+        </member>
+        <member name="M:MyTestProjectAPI.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IWebHostEnvironment)">
+            <summary>
+            Configure Method
+            </summary>
+            <param name="app">App variable</param>
+            <param name="env">Env variable</param>
+        </member>
+        <member name="T:MyTestProjectAPI.WeatherForecast">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MyTestProjectAPI.WeatherForecast.Date">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MyTestProjectAPI.WeatherForecast.TemperatureC">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MyTestProjectAPI.WeatherForecast.TemperatureF">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MyTestProjectAPI.WeatherForecast.Summary">
+            <summary>
+            
+            </summary>
+        </member>
+    </members>
+</doc>
